@@ -1,0 +1,165 @@
+.bg {
+  overflow: hidden;
+  width:100%;
+  position: absolute;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  z-index: 2;
+}
+.bg_block {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  z-index: 2;
+}
+.cloud {
+  overflow: hidden;
+  z-index: 0;
+  width:100%;
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  @-moz-keyframes animCloud {
+    from {
+        -moz-transform: translateX(100%)
+    }
+    to {
+        -moz-transform: translateX(-100%)
+    }
+}
+@keyframes animCloud {
+    from {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+}
+.cloud1, .cloud2, .cloud3, .cloud4 {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: auto;
+  position: absolute;
+  -webkit-user-select: none; 
+  -moz-user-select: none;   
+  -ms-user-select: none;
+  user-select: none;    
+  pointer-events: none;
+}
+.cloud1 {
+    -webkit-animation: animCloud 40s infinite linear;
+    -moz-animation: animCloud 40s infinite linear;
+    animation: animCloud 40s infinite linear
+}
+.cloud2 {
+    -webkit-animation: animCloud 40s infinite linear;
+    -moz-animation: animCloud 40s infinite linear;
+    animation: animCloud 20s infinite linear
+}
+.cloud3 {
+  top: 30%;
+    -webkit-animation: animCloud 60s infinite linear;
+    -moz-animation: animCloud 60s infinite linear;
+    animation: animCloud 60s infinite linear
+}
+.cloud4 {
+    -webkit-animation: animCloud 80s infinite linear;
+    -moz-animation: animCloud 80s infinite linear;
+    animation: animCloud 80s infinite linear
+}
+.animate_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    position: relative;
+
+    .form {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      input {
+        display: flex;
+            font-size: calc(var(--index) * 1.2);
+            font-weight: 900;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 15px;
+            background-color: rgba(34, 36, 36, 0.33);
+            text-shadow: 2px 2px 2px rgb(11, 11, 10);
+            color: rgb(236, 234, 234);
+            border-radius: 8px;
+            margin: 20px;
+      }
+    }
+    .block-1 {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 2;
+      img {
+        width: calc(var(--index) * 25);
+      }
+    }
+    .animate {
+        position: relative;
+        width: 145px;
+        height: 140px;
+        z-index: 3;
+          .item-1 {
+            position: absolute;
+            left: 0px;
+            top: 20px;
+            img {
+              height: 55px;
+            }
+          }
+          .item-2 {
+            position: absolute;
+            top: -2px;
+            left: 22px;
+          }
+          .item-3 {
+            position: absolute;
+            top: -4px;
+            left: 70px;
+          }
+          .item-4 {
+            position: absolute;
+            top: 16px;
+            left: 74px;
+            img {
+                width: 80px;
+            }
+          }
+          .item-5 {
+            position: absolute;
+            top: 72px;
+            left: 55px;
+            img {
+                width: 50px;
+            }
+          }
+    }
+}
+}

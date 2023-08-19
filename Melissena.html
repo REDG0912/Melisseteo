@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/index.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="preloader">
+        
+      </div>
+    <header class="header wow fadeInDown" data-wow-delay="5.2s">
+        <div class="container header__container">
+            <button class="header__burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="./first-page.html" class="logo">
+                <img class="logo__img" src="./assets/logo/logo.png" alt="Логотип">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="./info/Info.html">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="./partners/partners.html">
+                            Партнеры
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="./contact/contact.html">
+                            Связаться с нами
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="cloud" style="background-image: url(assets/backround/weather_5.jpg);">
+        <div class="bg" style="background-image: url(assets/backround/weather_51.png);"></div>
+        <div class="bg_block wow flipOutY" data-wow-delay="4s"></div>
+         <div class="animate_content">   
+            <ul class="animate wow fadeOutLeftBig" data-wow-delay="4s">
+                <li class="item-1 wow fadeInLeft" data-wow-delay="0.2s">
+                    <img src="./assets/logo-item/item-1.png" alt="">
+                </li>
+                <li class="item-2 wow fadeInDown" data-wow-delay="0.5s">
+                    <img src="./assets/logo-item/item-2.png" alt="">
+                </li>
+                <li class="item-3 wow fadeInDown" data-wow-delay="0.8s">
+                    <img src="./assets/logo-item/item-3.png" alt="">
+                </li>
+                <li class="item-4 wow fadeInRight" data-wow-delay="1.1s">
+                    <img src="./assets/logo-item/item-4.png" alt="">
+                </li>
+                <li class="item-5 wow fadeInUpBig" data-wow-delay="1s">
+                    <img src="./assets/logo-item/item-5.png" alt="">
+                </li>
+            </ul>
+            <ul class="block-1 wow fadeOutRightBig" data-wow-delay="4s">
+                <li class="item-6 wow fadeInUpBig" data-wow-delay="1.3s">
+                    <img src="./assets/logo-item/item-6.png" alt="">
+                </li>
+                <li class="item-7 wow fadeInRightBig" data-wow-delay="1.8s">
+                    <img src="./assets/logo-item/item-7.png" alt="">
+                </li>
+            </ul>
+            <div class="form wow fadeInUpBig">
+                <input type="text"
+                placeholder="Введите свой город">
+            </div>
+        </div>
+        <img src="./assets/cloud/cloud-01.png" alt="" class="cloud1">
+        <img src="./assets/cloud/cloud-02.png" alt="" class="cloud2">
+        <img src="./assets/cloud/cloud-03.png" alt="" class="cloud3">
+        <img src="./assets/cloud/cloud-04.png" alt="" class="cloud4">
+    </div>
+    </main>
+    <footer></footer>
+    <script src="./JS/Menu/nav-menu.js"></script>
+    <script src="JS/Wow/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <script src="./JS/Animation/animation.js"></script>
+</body>
+</html>
