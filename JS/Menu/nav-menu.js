@@ -12,8 +12,5 @@ document.addEventListener("DOMContentLoaded", function() {
         menu.classList.toggle("open");
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    // Hide the preloader
-    var preloader = document.querySelector(".preloader");
-    preloader.style.display = "none";
-  });
+
+
