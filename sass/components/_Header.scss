@@ -39,6 +39,7 @@
     height: 40px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
     z-index: 2;
 
     span {
@@ -93,8 +94,13 @@
     .active {
         color: rgb(57, 133, 231);
         font-weight: 800;
+        background-color: rgba(255, 255, 255, 0.262);
+        display: block;
+        border-radius: 10px;
+        padding: 2px 5px;
+        box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
     }
-    .menu__item:hover {
+    .menu__link:hover {
         display: block;
         transition: 0.8s;
         background-color: rgba(255, 255, 255, 0.262);
@@ -107,6 +113,7 @@ header.open {
     .header__burger-btn {
         span {
             background-color: white;
+            cursor: pointer;
             &:nth-child(1) {
                 transform: translateY(0) rotate(45deg);
             }
